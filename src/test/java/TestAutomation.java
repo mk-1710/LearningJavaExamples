@@ -249,7 +249,7 @@ public int minusTwo(int par){
 
         for (int el:
                 myArray) {
-            if (el >=237) break;
+            if (el >=245) break;
             if (el%2 == 0) {
                 System.out.println("even number: " + el);
             }
