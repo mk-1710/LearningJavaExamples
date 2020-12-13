@@ -257,6 +257,65 @@ public int minusTwo(int par){
     }
 
     @Test
+    public void testLoopsRepeat() {
+
+        int [] myArray = {1,2,3,4,5,6,7,8,9,10};
+        //for loop
+        System.out.println("for loop");
+        for(int i=0; i < myArray.length; i++){
+            System.out.println(myArray[i]);
+        }
+
+        //while loop
+        System.out.println("while loop");
+        int i = 0;
+        while(i < myArray.length){
+            System.out.println(myArray[i]);
+            i++;
+        }
+
+        //do loop
+        System.out.println("do loop");
+        i = 0;
+        do{
+            System.out.println(myArray[i]);
+            i++;
+        }while(i< myArray.length);
+
+        //foreach loop
+        System.out.println("foreach loop");
+        for(int el:myArray){
+            System.out.println(el);
+        }
+
+        //hw
+        int result = 0;
+        System.out.println("exercise");
+        for(int j=1; j<255; j++){
+            if (j>=237) {
+                result = j;
+                break;
+            }
+            if (j%2 == 0) {
+                System.out.println(j);
+            }
+        }
+        Assert.assertEquals(result, 237);
+
+
+    }
+
+    @Test
     public void testObjects() {
+        //Point myPoint = new Point(10, 15);
+
+        Student studentOne = new Student();
+        studentOne.setName("Mike");
+        studentOne.setLastName("Kurman");
+
+        System.out.println(studentOne.getFullName());
+
+        System.out.println(Student.MathSum(10, 15));
+
     }
 }
