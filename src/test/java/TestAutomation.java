@@ -256,4 +256,7 @@ public int minusTwo(int par){
         }
     }
 
+    @Test
+    public void testObjects() {
+    }
 }
