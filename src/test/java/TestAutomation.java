@@ -301,6 +301,22 @@ public int minusTwo(int par){
             }
         }
         Assert.assertEquals(result, 237);
+    }
+
+    @Test
+    public void testPointOperations() {
+        Point myPointOne = new Point(8,4);
+        Point myPointTwo = new Point();
+
+        //find the center between
+        System.out.println("center point");
+        Point myCenterPoint = myPointOne.center(myPointTwo);
+        myCenterPoint.drawPoint();
+
+        //find scale of point one
+        System.out.println("scale point of point one");
+        Point scalePoint = myPointOne.scale();
+        scalePoint.drawPoint();
 
 
     }
@@ -311,7 +327,7 @@ public int minusTwo(int par){
 
         Student studentOne = new Student();
         studentOne.setName("Mike");
-        studentOne.setLastName("Kurman");
+        studentOne.setLastName("Keicy");
 
         System.out.println(studentOne.getFullName());
 
