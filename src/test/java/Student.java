@@ -22,7 +22,7 @@ public class Student {
         return (this.name + " " + this.lastName);
     }
 
-    public static int MathSum(int x, int y){
+    public static int mathSum(int x, int y){
         return x + y;
     }
 

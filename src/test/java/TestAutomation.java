@@ -155,86 +155,86 @@ public int minusTwo(int par){
 
     @Test
     public void testLoops() {
-//        //simple loop
-//        System.out.println("***** simple loop");
-//        for (int i = 1; i<6; i++){
-//            System.out.println("i = " + i);
-//        }
-//
-//        System.out.println("***** loop variant 1");
-//        //loop variant 1
-//        boolean isVisible = true;
-//
-//        for (int j = 0; isVisible; j++){
-//            if (j > 5) isVisible = false;
-//            System.out.println("j = " + j);
-//        }
-//
-//        System.out.println("***** loop variant 2");
-//        //loop variant 2
-//        for (int k = 0; true; k++){
-//            System.out.println("k = " + k);
-//            if (k > 5) break;
-//        }
-//
-//        System.out.println("***** loop variant 3");
-//        //loop variant 3
-//        for (int l = 0; l < 10; l++){
-//            if (l == 5) {
-//                System.out.println("this is a gap");
-//                continue;
-//            }
-//            System.out.println("l = " + l);
-//        }
+        //simple loop
+        System.out.println("***** simple loop");
+        for (int i = 1; i<6; i++){
+            System.out.println("i = " + i);
+        }
 
-//        //loop variant 4
-//        System.out.println("***** loop variant 4");
-//        int i = 5;
-//        int j = 1;
-//        while (j < i) {
-//            System.out.println("step # " + j);
-//            j++;
-//        }
+        System.out.println("***** loop variant 1");
+        //loop variant 1
+        boolean isVisible = true;
 
-//        //loop variant 5
-//        System.out.println("***** loop variant 5");
-//        int i = 5, j = 5;
-//        int st = 1;
-//        do {
-//            System.out.println("step # " + st);
-//            st++;
-//        }while (j < i);
+        for (int j = 0; isVisible; j++){
+            if (j > 5) isVisible = false;
+            System.out.println("j = " + j);
+        }
 
-//        //loop variant 6
-//        System.out.println("***** loop variant 6");
-//        int[] myArray = {2, 4, 5, 6};
-//        for (int el: myArray) {
-//            System.out.println("element value " + el);
-//        }
+        System.out.println("***** loop variant 2");
+        //loop variant 2
+        for (int k = 0; true; k++){
+            System.out.println("k = " + k);
+            if (k > 5) break;
+        }
 
-//        //loop variant 7
-//        System.out.println("***** loop variant 7");
-//        int[] myArray = new int[10];
-//
-//        for(int i = 0; i<10; i++){
-//           myArray[i] = i*10;
-//        }
-//
-//        for (int el: myArray) {
-//            System.out.println("element value " + el);
-//        }
+        System.out.println("***** loop variant 3");
+        //loop variant 3
+        for (int l = 0; l < 10; l++){
+            if (l == 5) {
+                System.out.println("this is a gap");
+                continue;
+            }
+            System.out.println("l = " + l);
+        }
 
-//        //loop variant 8
-//        System.out.println("***** loop variant 8");
-//        String[] myArray = new String[10];
-//
-//        for(int i = 0; i<10; i++){
-//            myArray[i] = "element " + i;
-//        }
-//
-//        for (String el: myArray) {
-//            System.out.println("element value '" + el +"'");
-//        }
+        //loop variant 4
+        System.out.println("***** loop variant 4");
+        int i = 5;
+        int j = 1;
+        while (j < i) {
+            System.out.println("step # " + j);
+            j++;
+        }
+
+        //loop variant 5
+        System.out.println("***** loop variant 5");
+        int i1 = 5, j1 = 5;
+        int st = 1;
+        do {
+            System.out.println("step # " + st);
+            st++;
+        }while (j1 < i1);
+
+        //loop variant 6
+        System.out.println("***** loop variant 6");
+        int[] myArray = {2, 4, 5, 6};
+        for (int el: myArray) {
+            System.out.println("element value " + el);
+        }
+
+        //loop variant 7
+        System.out.println("***** loop variant 7");
+        int[] myArray1 = new int[10];
+
+        for(int i2 = 0; i<10; i++){
+           myArray1[i2] = i2*10;
+        }
+
+        for (int el: myArray) {
+            System.out.println("element value " + el);
+        }
+
+        //loop variant 8
+        System.out.println("***** loop variant 8");
+        String[] myArray2 = new String[10];
+
+        for(int i3 = 0; i3<10; i3++){
+            myArray2[i3] = "element " + i3;
+        }
+
+        for (String el: myArray2) {
+            System.out.println("element value '" + el +"'");
+        }
 
         //exercise
         //Loop through and print out all even numbers,
@@ -242,13 +242,12 @@ public int minusTwo(int par){
         // in the same order they are received.
         // Don't print any numbers that come after 237 in the sequence.
 
-        int[] myArray = new int[255];
-        for(int i = 0; i<255; i++){
-            myArray[i] = i;
+        int[] myArray4 = new int[255];
+        for(int i5 = 0; i5<255; i5++){
+            myArray4[i5] = i5;
         }
 
-        for (int el:
-                myArray) {
+        for (int el:myArray4) {
             if (el >=237) break;
             if (el%2 == 0) {
                 System.out.println("even number: " + el);
@@ -323,7 +322,6 @@ public int minusTwo(int par){
 
     @Test
     public void testObjects() {
-        //Point myPoint = new Point(10, 15);
 
         Student studentOne = new Student();
         studentOne.setName("Mike");
@@ -331,7 +329,7 @@ public int minusTwo(int par){
 
         System.out.println(studentOne.getFullName());
 
-        System.out.println(Student.MathSum(10, 15));
+        System.out.println(Student.mathSum(10, 15));
 
     }
 }
